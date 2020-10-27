@@ -18,6 +18,7 @@ img {
 
 /* header */
 .header {
+  display: flex;
   height: 80px;
   width: 100%;
 }
@@ -122,6 +123,12 @@ img {
   color: #fff;
   border-radius: 46px;
   margin-left: 50px;
+  transition: background 0.3s;
+}
+
+.slide a:last-child:hover {
+  background: #fff;
+  color: #222;
 }
 
 /* section-01 */
@@ -179,6 +186,12 @@ img {
   line-height: 2.3;
   border-radius: 36px;
   margin-top: 40px;
+  transition: background 0.3s;
+}
+
+.btn01:hover {
+  color: #fff;
+  background: #222222;
 }
 
 /* section-02 */
@@ -202,8 +215,13 @@ img {
   display: flex;
 }
 
-.item_box02 .item01,
-.item02,
+.item01 {
+  width: 260px;
+  height: 260px;
+  margin: 60px 0 0 0;
+}
+
+.item_box02 .item02,
 .item03,
 .item04 {
   width: 260px;
@@ -257,6 +275,13 @@ img {
   line-height: 2.8;
   border-radius: 36px;
   margin-top: 60px;
+  transition: background 0.3s;
+}
+
+.sec03_btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
 }
 
 /* section-04 */
@@ -281,8 +306,14 @@ img {
 .item_box03 {
   display: flex;
 }
-.item_box03 .box1,
-.box2,
+
+.box1 {
+  width: 260px;
+  height: 260px;
+  margin: 60px 0 0 0;
+}
+
+.item_box03 .box2,
 .box3,
 .box4 {
   width: 260px;
@@ -337,7 +368,6 @@ img {
   height: 360px;
   background-size: cover;
   border-radius: 30px;
-  margin-left: 42px;
 }
 
 .sec_05 .box_02 {
@@ -372,6 +402,11 @@ img {
   margin-left: 50px;
 }
 
+.bottom_logo a {
+  display: block;
+  width: 126px;
+}
+
 .bottom_logo h2 {
   font-weight: bold;
   font-size: 40px;
@@ -391,6 +426,15 @@ input {
   height: 50px;
   margin: 14px 0 20px;
   padding-left: 20px;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: #b2b2b2;
+  transition: color 0.2s;
+}
+input:focus::placeholder {
+  color: transparent;
 }
 
 .email_btn {
@@ -414,7 +458,7 @@ input {
   display: block;
   width: 150px;
   height: 45px;
-  border: 1px solid #666;
+  border: 2px solid #666;
   border-radius: 8px;
   margin-right: 30px;
   color: #fff;
@@ -433,7 +477,7 @@ input {
 .app_btn a p {
   text-align: center;
   margin-left: 30px;
-  line-height: 40px;
+  line-height: 43px;
 }
 
 .sns ul {
