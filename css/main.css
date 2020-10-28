@@ -536,7 +536,7 @@ input:focus::placeholder {
   padding-right: 0;
 }
 
-.footer .right .bottom_menu > li > a {
+.footer .right .bottom_menu > li > p {
   padding-top: 30px;
   display: inline-block;
   font-size: 20px;
